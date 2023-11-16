@@ -112,10 +112,10 @@ html, body{
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         transition: all 0.3s ease-in-out;
     }
-    .option:hover{
+    /* .option:hover{
         background-color:#e9f0e7;
         transform: scale(1.1);
-    }
+    } */
     .design {
         background-image: url(des-1.png);
         background-size:50%;
@@ -123,16 +123,16 @@ html, body{
         /* background-position:center; */
         
     }
-    .design:hover, .wysiwyg:hover, .app-dev:hover {
+    /* .design:hover, .wysiwyg:hover, .app-dev:hover {
         background-image:none;
         
-    }
+    } */
     .design > h3{
         background-color:#E0ECDE;
     } 
-    .design:hover > h3 {
+    /* .design:hover > h3 {
         background:none;
-    }
+    } */
     h3{
         text-align:center;
     }
@@ -150,41 +150,41 @@ html, body{
         background-position:center;
         
     }
-    .wysiwyg:hover > #txtone { 
+    /* .wysiwyg:hover > #txtone { 
         display:block;
-     }
+     } */
 
     .wysiwyg > #txtone { 
         display:none;
      }
 
-     .wysiwyg:hover > #titleone { 
+     /* .wysiwyg:hover > #titleone { 
         display:none;
      }
 
     .design:hover > #txttwo { 
         display:block;
-     }
+     } */
 
     .design > #txttwo { 
         display:none;
      }
      
-     .design:hover > #titletwo { 
+     /* .design:hover > #titletwo { 
         display:none;
      }
 
      .app-dev:hover > #txtthree { 
         display:block;
-     }
+     } */
 
     .app-dev > #txtthree { 
         display:none;
      }
      
-     .app-dev:hover > #titlethree { 
+     /* .app-dev:hover > #titlethree { 
         display:none;
-     }
+     } */
 
     .clicked{
         background-color:#e9f0e7;
