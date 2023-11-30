@@ -254,3 +254,11 @@ html, body{
         animation: mover .75s infinite  alternate;
         margin-top:20px;
     }
+
+    .portal {
+        position: relative;
+        height:30px;
+        width:30px;
+        background-color:rgb(41, 120, 194);
+        border-radius:50%;
+    }
