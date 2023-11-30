@@ -134,7 +134,10 @@ function getKeyAndMove(e) {
     }
     
 }
-let movement;
+let movement1;
+let movement2;
+let movement3;
+let movement4;
 function moveLeft() {
     if((parseInt(player.style.left) - 25) <= 0){
         player.style.left = "0px";
@@ -159,8 +162,17 @@ function buttonUp(){
     moveUp(); 
     },50);
 }
-function clearIntervals(){
-    movement = window.clearInterval(movement);
+function clearInterval1(){
+    movement1 = window.clearInterval(movement);
+}
+function clearInterval2(){
+    movement2 = window.clearInterval(movement);
+}
+function clearInterval3(){
+    movement3 = window.clearInterval(movement);
+}
+function clearInterval4(){
+    movement4 = window.clearInterval(movement);
 }
 function moveRight() {
     if((parseInt(player.style.left) + 25) > right_limit){
