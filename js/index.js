@@ -134,12 +134,18 @@ function getKeyAndMove(e) {
     }
     
 }
+let movement;
 function moveLeft() {
     if((parseInt(player.style.left) - 25) <= 0){
         player.style.left = "0px";
     } else {
         player.style.left = parseInt(player.style.left) - 10 + "px";
     }
+}
+function buttonLeft(){
+    movement = setInterval(function(){
+    moveLeft(); 
+    },50);
 }
 function moveUp() {
     if((parseInt(player.style.top) - 25) <= 0){
@@ -148,12 +154,25 @@ function moveUp() {
         player.style.top = parseInt(player.style.top) - 10 + "px";
     }
 }
+function buttonUp(){
+    movement = setInterval(function(){
+    moveUp(); 
+    },50);
+}
+function clearIntervals(){
+    movement = window.clearInterval(movement);
+}
 function moveRight() {
     if((parseInt(player.style.left) + 25) > right_limit){
         player.style.left = (right_limit - 15) + "px";
     } else {
         player.style.left = parseInt(player.style.left) + 10 + "px";
     }
+}
+function buttonRight(){
+    movement = setInterval(function(){
+    moveRight(); 
+    },50);
 }
 function moveDown() {
     if((parseInt(player.style.top) + 25) > bottom_limit){
@@ -162,7 +181,11 @@ function moveDown() {
         player.style.top = parseInt(player.style.top) + 10 + "px";
     }
 }
-
+function buttonDown(){
+    movement = setInterval(function(){
+    moveDown(); 
+    },50);
+}
 //disable / enable scrolling
 
 // left: 37, up: 38, right: 39, down: 40,
@@ -201,7 +224,7 @@ function disableScroll() {
 
     document.getElementById("start_game").style.display = "none";
     document.getElementById("stop_game").style.display = "inline-block";
-
+    rmvPortal();
     initializePlayers();
 }
 

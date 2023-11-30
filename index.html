@@ -240,26 +240,26 @@
             <div class="container">
                 <div class="row" style="justify-content:center">
                     <div class="col-6 col-md-2">
-                        <button class="btn" style="background-color:#68B2A0;border-radius:50%;color:white"><i class="icon fas fa-arrow-down fa-4x"></i></button>
+                        <button onmousedown="buttonUp()" ontouchstart="buttonUp()" onmouseup="clearIntervals()" ontouchend="clearIntervals()" class="btn" style="background-color:#68B2A0;border-radius:50%;color:white"><i class="icon fas fa-arrow-up fa-4x"></i></button>
                     </div>
                 </div>
                 <div class="row" style="justify-content:center">
                     <div class="col-6 col-md-2">
-                        <button class="btn" style="background-color:#68B2A0;border-radius:50%;color:white"><i class="icon fas fa-arrow-down fa-4x"></i></button>
+                        <button  onmousedown="buttonLeft()" ontouchstart="buttonLeft()" onmouseup="clearIntervals()" ontouchend="clearIntervals()" class="btn" style="background-color:#68B2A0;border-radius:50%;color:white"><i class="icon fas fa-arrow-left fa-4x"></i></button>
                     </div>
                     <div class="col-6 col-md-2">
-                        <button class="btn" style="background-color:#68B2A0;border-radius:50%;color:white"><i class="icon fas fa-arrow-down fa-4x"></i></button>
+                        <button  onmousedown="buttonRight()" ontouchstart="buttonRight()" onmouseup="clearIntervals()" ontouchend="clearIntervals()" class="btn" style="background-color:#68B2A0;border-radius:50%;color:white"><i class="icon fas fa-arrow-right fa-4x"></i></button>
                     </div>
                 </div>
                 <div class="row" style="justify-content:center">
                     <div class="col-6 col-md-2">
-                        <button class="btn" style="background-color:#68B2A0;border-radius:50%;color:white"><i class="icon fas fa-arrow-down fa-4x"></i></button>
+                        <button  onmousedown="buttonDown()" ontouchstart="buttonDown()" onmouseup="clearIntervals()" ontouchend="clearIntervals()" class="btn" style="background-color:#68B2A0;border-radius:50%;color:white"><i class="icon fas fa-arrow-down fa-4x"></i></button>
                     </div>
                 </div>
             </div>
             
             <button style="margin-top:20px;background-color:#68B2A0;color:white" id="start_game" class="btn" onclick="disableScroll()">Play</button>
-            <button style="display:none;margin-top:20px;" id="stop_game" class="btn btn-primary" onclick="enableScroll()">Stop</button>
+            <button style="display:none;margin-top:20px;background-color:#68B2A0;color:white" id="stop_game" class="btn" onclick="enableScroll()">Stop</button>
         </div>
     </div>
 
