@@ -73,7 +73,6 @@ function showHoverState3(){
 // }
 
 // functions to rotate forward through skills
-
 // moves to the next element in the array
 function getNextSkill(){
    
